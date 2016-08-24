@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_action_home"
+            android:title="Inicio" />
+
+        <item
+            android:id="@+id/nav_pet"
+            android:icon="@drawable/ic_pets"
+            android:title="Mis mascotas" />
+
+        <item
+            android:id="@+id/nav_options"
+            android:icon="@drawable/ic_pets"
+            android:title="Mis mascotas" />
+    </group>
+
+</menu>
