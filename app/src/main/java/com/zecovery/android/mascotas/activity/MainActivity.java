@@ -7,7 +7,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
+import com.albinmathew.transitions.ActivityTransitionLauncher;
 import com.zecovery.android.mascotas.R;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
@@ -22,7 +24,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
 
     private void setupButtons() {
-        Button buttonRut = (Button) findViewById(R.id.buttonRut);
+        ImageView buttonRut = (ImageView) findViewById(R.id.buttonRut);
         Button buttonAddress = (Button) findViewById(R.id.buttonAddress);
         Button buttonQr = (Button) findViewById(R.id.buttonQr);
         Button buttonChip = (Button) findViewById(R.id.buttonChip);
@@ -54,7 +56,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
         switch (view.getId()) {
             case R.id.buttonRut:
-                startActivity(new Intent(MainActivity.this, RutActivity.class));
+
+                final Intent intent = new Intent(MainActivity.this, RutActivity.class);
+                ActivityTransitionLauncher.with(MainActivity.this).from(view).launch(intent);
+
+                //startActivity(new Intent(MainActivity.this, RutActivity.class));
                 break;
             case R.id.buttonAddress:
                 startActivity(new Intent(MainActivity.this, AddressActivity.class));

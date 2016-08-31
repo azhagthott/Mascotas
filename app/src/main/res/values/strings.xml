@@ -30,5 +30,15 @@
     <string name="tv_sub_address">alguna sugerencia aqui?</string>
     <string name="address_hint">Llico 959, San Miguel, Santiago</string>
 
+    <!-- Intro -->
+    <string name="intro_fragment_1">Fragment 1</string>
+    <string name="intro_fragment_2">Fragment 2</string>
+    <string name="intro_fragment_3">Fragment 3</string>
+    <string name="intro_fragment_4">Fragment 4</string>
+
+    <string name="intro_fragment_1_description">Fragment 1</string>
+    <string name="intro_fragment_2_description">Fragment 1</string>
+    <string name="intro_fragment_3_description">Fragment 1</string>
+    <string name="intro_fragment_4_description">Fragment 1</string>
 
 </resources>

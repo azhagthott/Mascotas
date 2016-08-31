@@ -5,6 +5,8 @@
     android:id="@+id/content_qr"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.zecovery.android.mascotas.activity.QRActivity"
     tools:showIn="@layout/activity_qr">

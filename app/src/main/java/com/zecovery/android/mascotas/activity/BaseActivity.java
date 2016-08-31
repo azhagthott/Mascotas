@@ -14,10 +14,7 @@ import com.zecovery.android.mascotas.R;
 public class BaseActivity extends AppCompatActivity {
 
     public static final String LOG_TAG = ":::LOG:::";
-    public static final String URL_ROOT = "http://alvaro.desa.exec.cl/moe/REST/Pet/index.php";
-    public static final String URL_RUT = "http://alvaro.desa.exec.cl/moe/REST/Pet/index.php?rut=";
-    public static final String URL_ADDRESS = "http://alvaro.desa.exec.cl/moe/REST/Pet/index.php?direccion=";
-    public static final String URL_CHIP = "http://alvaro.desa.exec.cl/moe/REST/Pet/index.php?chip=";
+    public static final String URL_REQUEST = "http://alvaro.desa.exec.cl/moe/REST/Pet/index.php?request=";
 
     public static final String RESPONSE_STATUS = "status";
 

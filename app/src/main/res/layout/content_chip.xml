@@ -5,6 +5,7 @@
     android:id="@+id/content_chip"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
     android:gravity="center"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -37,15 +38,19 @@
         android:layout_margin="24dp">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/editTextChip"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/chip_hint"
-            android:inputType="textShortMessage"
+            android:inputType="number"
             android:minLines="1"
             android:textSize="24sp" />
 
     </android.support.design.widget.TextInputLayout>
 
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
