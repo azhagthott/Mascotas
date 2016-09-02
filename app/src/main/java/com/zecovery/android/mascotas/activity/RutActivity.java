@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.albinmathew.transitions.ActivityTransition;
-import com.albinmathew.transitions.ExitActivityTransition;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -27,7 +25,6 @@ public class RutActivity extends BaseActivity implements View.OnClickListener {
     private FloatingActionButton fab;
     private TextView log;
 
-    private ExitActivityTransition exitActivityTransition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +33,6 @@ public class RutActivity extends BaseActivity implements View.OnClickListener {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        ActivityTransition.with(getIntent()).to(findViewById(R.id.image)).start(savedInstanceState);
 
         editTextRut = (EditText) findViewById(R.id.editTextRut);
 

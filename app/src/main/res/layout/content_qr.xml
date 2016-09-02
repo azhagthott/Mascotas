@@ -11,4 +11,9 @@
     tools:context="com.zecovery.android.mascotas.activity.QRActivity"
     tools:showIn="@layout/activity_qr">
 
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:id="@+id/qrScanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 </RelativeLayout>

@@ -6,10 +6,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
-import com.albinmathew.transitions.ActivityTransitionLauncher;
 import com.zecovery.android.mascotas.R;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
@@ -24,15 +22,15 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
 
     private void setupButtons() {
-        ImageView buttonRut = (ImageView) findViewById(R.id.buttonRut);
-        Button buttonAddress = (Button) findViewById(R.id.buttonAddress);
-        Button buttonQr = (Button) findViewById(R.id.buttonQr);
-        Button buttonChip = (Button) findViewById(R.id.buttonChip);
+        ImageView imageViewRut = (ImageView) findViewById(R.id.imageViewRut);
+        ImageView imageViewAddress = (ImageView) findViewById(R.id.imageViewAddress);
+        ImageView imageViewChip = (ImageView) findViewById(R.id.imageViewChip);
+        ImageView imageViewQR = (ImageView) findViewById(R.id.imageViewQR);
 
-        buttonRut.setOnClickListener(this);
-        buttonAddress.setOnClickListener(this);
-        buttonQr.setOnClickListener(this);
-        buttonChip.setOnClickListener(this);
+        imageViewRut.setOnClickListener(this);
+        imageViewAddress.setOnClickListener(this);
+        imageViewChip.setOnClickListener(this);
+        imageViewQR.setOnClickListener(this);
     }
 
     @Override
@@ -55,20 +53,16 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     public void onClick(View view) {
 
         switch (view.getId()) {
-            case R.id.buttonRut:
-
-                final Intent intent = new Intent(MainActivity.this, RutActivity.class);
-                ActivityTransitionLauncher.with(MainActivity.this).from(view).launch(intent);
-
-                //startActivity(new Intent(MainActivity.this, RutActivity.class));
+            case R.id.imageViewRut:
+                startActivity(new Intent(MainActivity.this, RutActivity.class));
                 break;
-            case R.id.buttonAddress:
+            case R.id.imageViewAddress:
                 startActivity(new Intent(MainActivity.this, AddressActivity.class));
                 break;
-            case R.id.buttonQr:
+            case R.id.imageViewQR:
                 startActivity(new Intent(MainActivity.this, QRActivity.class));
                 break;
-            case R.id.buttonChip:
+            case R.id.imageViewChip:
                 startActivity(new Intent(MainActivity.this, ChipActivity.class));
                 break;
         }

@@ -30,6 +30,11 @@
     <string name="tv_sub_address">alguna sugerencia aqui?</string>
     <string name="address_hint">Llico 959, San Miguel, Santiago</string>
 
+    <!-- Activitiy RUT -->
+    <string name="qr_alert_message_ok">Continuar</string>
+    <string name="qr_alert_message_nok">Cancelar</string>
+    <string name="qr_alert_message">Resultado</string>
+
     <!-- Intro -->
     <string name="intro_fragment_1">Fragment 1</string>
     <string name="intro_fragment_2">Fragment 2</string>
