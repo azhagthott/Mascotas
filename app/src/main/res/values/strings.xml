@@ -9,6 +9,12 @@
     <string name="button_chip">Busqueda por chip</string>
     <string name="button_qr">Busqueda por QR</string>
 
+    <string name="image_rut_content_description">Busqueda por RUT</string>
+    <string name="image_address_content_description">Busqueda por dirección</string>
+    <string name="image_chip_content_description">Busqueda por chip</string>
+    <string name="image_qr_content_description">Busqueda por QR</string>
+
+
     <!-- Activities title -->
     <string name="title_activity_qr">Lector de QR</string>
     <string name="title_activity_rut">Búsqueda por RUT</string>

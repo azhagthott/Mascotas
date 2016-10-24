@@ -13,9 +13,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
 import com.zecovery.android.mascotas.R;
+import com.zecovery.android.mascotas.app.Mascota;
 import com.zecovery.android.mascotas.com.CustomJsonRequest;
 import com.zecovery.android.mascotas.com.PetDataRequest;
-import com.zecovery.android.mascotas.pet.Pet;
 
 import org.json.JSONObject;
 
@@ -48,7 +48,7 @@ public class AddressActivity extends BaseActivity implements View.OnClickListene
             final String address = editTextAddress.getText().toString();
             Log.d(LOG_TAG, "onResume: " + address);
 
-            final Pet pet = new Pet();
+            final Mascota mascota = new Mascota();
             CustomJsonRequest request = new CustomJsonRequest(
                     Request.Method.GET,
                     URL_REQUEST + address,

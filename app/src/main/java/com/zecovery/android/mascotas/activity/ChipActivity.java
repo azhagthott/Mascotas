@@ -13,9 +13,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
 import com.zecovery.android.mascotas.R;
+import com.zecovery.android.mascotas.app.Mascota;
 import com.zecovery.android.mascotas.com.CustomJsonRequest;
 import com.zecovery.android.mascotas.com.PetDataRequest;
-import com.zecovery.android.mascotas.pet.Pet;
 
 import org.json.JSONObject;
 
@@ -51,7 +51,7 @@ public class ChipActivity extends BaseActivity implements View.OnClickListener {
             if (editTextChip != null) {
                 final String chip = editTextChip.getText().toString();
 
-                final Pet pet = new Pet();
+                final Mascota mascota = new Mascota();
                 CustomJsonRequest request = new CustomJsonRequest(
                         Request.Method.GET,
                         URL_REQUEST + chip,

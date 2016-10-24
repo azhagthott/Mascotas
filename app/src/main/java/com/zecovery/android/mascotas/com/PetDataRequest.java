@@ -3,9 +3,8 @@ package com.zecovery.android.mascotas.com;
 import android.util.Log;
 
 import com.zecovery.android.mascotas.activity.BaseActivity;
-import com.zecovery.android.mascotas.pet.Pet;
+import com.zecovery.android.mascotas.app.Mascota;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
@@ -20,16 +19,20 @@ public class PetDataRequest extends BaseActivity {
         this.jsonObject = jsonObject;
     }
 
-    public Pet getData() {
+    public Mascota getData() {
 
-        Pet pet = new Pet();
+        Mascota mascota = new Mascota();
 
         try {
             String status = jsonObject.getString(RESPONSE_STATUS);
 
             if (status.equals("OK")) {
-                String json = jsonObject.getString("response");
-                Log.d(LOG_TAG, "getDataFromRut: " + json);
+
+                JSONObject response = jsonObject.getJSONObject("response");
+                mascota.setNombrePropietario(response.getString("NOMBRE"));
+                mascota.setPaciente(response.getString("PACIENTE"));
+
+
             } else {
                 Log.d(LOG_TAG, "NOT FOUND - 404");
                 // 404
@@ -38,6 +41,6 @@ public class PetDataRequest extends BaseActivity {
             Log.d(LOG_TAG, "getDataFromRut: " + e);
         }
 
-        return pet;
+        return mascota;
     }
 }

@@ -10,6 +10,11 @@
 
     <color name="black">#000000</color>
 
+    <color name="main_color_1">#C62828</color>
+    <color name="main_color_2">#C62828</color>
+    <color name="main_color_3">#C62828</color>
+    <color name="main_color_4">#C62828</color>
+
     <!-- White -->
     <color name="white">#FFFFFF</color>
 
