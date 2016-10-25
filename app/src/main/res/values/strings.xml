@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">Mascotas</string>
+    <string name="app_name">PTRAC</string>
 
-    <string name="action_settings">Preferencias</string>
+    <!-- Main menu -->
+    <string name="action_about">¿Cómo funciona?</string>
+    <string name="action_intro">Ver intro</string>
 
     <!-- Main buttons -->
     <string name="button_rut">Busqueda por RUT</string>
@@ -13,7 +15,6 @@
     <string name="image_address_content_description">Busqueda por dirección</string>
     <string name="image_chip_content_description">Busqueda por chip</string>
     <string name="image_qr_content_description">Busqueda por QR</string>
-
 
     <!-- Activities title -->
     <string name="title_activity_qr">Lector de QR</string>
@@ -42,14 +43,17 @@
     <string name="qr_alert_message">Resultado</string>
 
     <!-- Intro -->
-    <string name="intro_fragment_1">Fragment 1</string>
-    <string name="intro_fragment_2">Fragment 2</string>
-    <string name="intro_fragment_3">Fragment 3</string>
-    <string name="intro_fragment_4">Fragment 4</string>
+    <string name="intro_fragment_1_title">Búsqueda por RUT</string>
+    <string name="intro_fragment_2_title">Búsqueda por numero de chip</string>
+    <string name="intro_fragment_3_title">Búsqueda por dirección del propietario</string>
+    <string name="intro_fragment_4_title">Búsqueda por código QR</string>
 
-    <string name="intro_fragment_1_description">Fragment 1</string>
-    <string name="intro_fragment_2_description">Fragment 1</string>
-    <string name="intro_fragment_3_description">Fragment 1</string>
-    <string name="intro_fragment_4_description">Fragment 1</string>
+    <string name="intro_fragment_1_description">Por medio del Ingreso del RUT del propietario de la mascota, podrá encontrar información</string>
+    <string name="intro_fragment_2_description">Al ingresar el número de chip de la mascota, se mostrará información del propietario</string>
+    <string name="intro_fragment_3_description">Ingresando la dirección del propietario, podrá encontrar información sobre las mascotas</string>
+    <string name="intro_fragment_4_description">A través del escaneo de un codigo QR encontrará informacion en línea de la mascota</string>
+
+    <!-- Activitiy About/Como funciona? -->
+    <string name="title_activity_about">¿Cómo funciona?</string>
 
 </resources>

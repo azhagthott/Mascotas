@@ -28,6 +28,10 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".intro.Intro"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
             android:name=".activity.QRActivity"
             android:label="@string/title_activity_qr"
             android:parentActivityName=".activity.MainActivity"
@@ -57,6 +61,15 @@
         <activity
             android:name=".activity.ChipActivity"
             android:label="@string/title_activity_chip"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zecovery.android.mascotas.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

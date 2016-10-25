@@ -2,39 +2,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.zecovery.android.mascotas.intro.FirstFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/orange_400">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/ic_photo_camera" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView"
-            android:layout_centerHorizontal="true"
-            android:text="@string/intro_fragment_1_description"
-            android:textColor="@color/white" />
+        android:background="@color/orange_600">
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView2"
+            android:text="@string/intro_fragment_1_title"
+            android:textColor="@color/white"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/textView2"
-            android:text="@string/intro_fragment_1"
-            android:textColor="@color/white" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_color="#33000000"
+            app:civ_border_width="2dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_pets"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/circleImageView" />
+
+        <TextView
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intro_fragment_1_description"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_below="@+id/circleImageView"
+            android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
 

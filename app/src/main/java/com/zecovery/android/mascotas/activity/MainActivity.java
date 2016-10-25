@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.zecovery.android.mascotas.R;
+import com.zecovery.android.mascotas.intro.Intro;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -50,5 +51,27 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 startActivity(new Intent(MainActivity.this, ChipActivity.class));
                 break;
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        switch (id) {
+            case R.id.action_about:
+                startActivity(new Intent(MainActivity.this, AboutActivity.class));
+                break;
+            case R.id.action_intro:
+                startActivity(new Intent(MainActivity.this, Intro.class));
+                break;
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
