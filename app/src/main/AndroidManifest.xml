@@ -3,8 +3,8 @@
     package="com.zecovery.android.mascotas">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -30,7 +30,7 @@
         <activity
             android:name=".intro.Intro"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.QRActivity"
             android:label="@string/title_activity_qr"
@@ -69,6 +69,21 @@
         <activity
             android:name=".activity.AboutActivity"
             android:label="@string/title_activity_about"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zecovery.android.mascotas.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ResultActivity"
+            android:label="@string/title_activity_result"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".activity.InfoActivity"
+            android:label="@string/title_activity_info"
             android:parentActivityName=".activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

@@ -12,6 +12,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
+import com.google.firebase.crash.FirebaseCrash;
 import com.zecovery.android.mascotas.R;
 import com.zecovery.android.mascotas.app.Mascota;
 import com.zecovery.android.mascotas.com.CustomJsonRequest;
@@ -30,6 +31,7 @@ public class ChipActivity extends BaseActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chip);
+        FirebaseCrash.log("ChipActivity created");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -54,7 +56,7 @@ public class ChipActivity extends BaseActivity implements View.OnClickListener {
                 final Mascota mascota = new Mascota();
                 CustomJsonRequest request = new CustomJsonRequest(
                         Request.Method.GET,
-                        URL_REQUEST + chip,
+                        URL_REQUEST_CHIP + chip,
                         null,
                         new Response.Listener<JSONObject>() {
                             @Override

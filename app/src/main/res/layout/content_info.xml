@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/content_info"
+    android:layout_width="match_parent"
+    android:background="@color/darkBackground"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zecovery.android.mascotas.activity.InfoActivity"
+    tools:showIn="@layout/activity_info">
+
+    <ProgressBar
+        android:background="@color/darkBackground"
+        android:id="@+id/progressBar"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+    <WebView
+        android:background="@color/darkBackground"
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

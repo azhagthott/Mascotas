@@ -51,7 +51,7 @@ public class AddressActivity extends BaseActivity implements View.OnClickListene
             final Mascota mascota = new Mascota();
             CustomJsonRequest request = new CustomJsonRequest(
                     Request.Method.GET,
-                    URL_REQUEST + address,
+                    URL_REQUEST_CHIP + address,
                     null,
                     new Response.Listener<JSONObject>() {
                         @Override

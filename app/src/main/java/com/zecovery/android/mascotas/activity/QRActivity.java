@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.crash.FirebaseCrash;
 import com.google.zxing.Result;
 import com.zecovery.android.mascotas.R;
 
@@ -37,6 +38,8 @@ public class QRActivity extends BaseActivity implements ZXingScannerView.ResultH
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qr);
+
+        FirebaseCrash.log("QRActivity created");
 
         if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.M){
 
@@ -161,7 +164,7 @@ public class QRActivity extends BaseActivity implements ZXingScannerView.ResultH
 
             case R.id.buttonWeb:
                 if(qrResult!=null){
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(URL_REQUEST + qrResult)));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(URL_REQUEST_RUT + qrResult)));
                 }else {
                     Log.d(LOG_TAG, "onClick: NO QR");
                 }

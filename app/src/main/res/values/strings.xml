@@ -6,15 +6,11 @@
     <string name="action_intro">Ver intro</string>
 
     <!-- Main buttons -->
-    <string name="button_rut">Busqueda por RUT</string>
+    <string name="button_rut">Busqueda por RUT del propietario</string>
     <string name="button_address">Busqueda por dirección</string>
     <string name="button_chip">Busqueda por chip</string>
     <string name="button_qr">Busqueda por QR</string>
-
-    <string name="image_rut_content_description">Busqueda por RUT</string>
-    <string name="image_address_content_description">Busqueda por dirección</string>
-    <string name="image_chip_content_description">Busqueda por chip</string>
-    <string name="image_qr_content_description">Busqueda por QR</string>
+    <string name="button_info">Más información</string>
 
     <!-- Activities title -->
     <string name="title_activity_qr">Lector de QR</string>
@@ -24,7 +20,7 @@
 
     <!-- Activitiy RUT -->
     <string name="tv_rut">Ingrese el RUT del propietario</string>
-    <string name="tv_sub_rut">sin puntos y  con guión</string>
+    <string name="tv_sub_rut">sin puntos, con guión y digito verificador</string>
     <string name="rut_hint">123456789-0</string>
 
     <!-- Activitiy Chip -->
@@ -55,5 +51,11 @@
 
     <!-- Activitiy About/Como funciona? -->
     <string name="title_activity_about">¿Cómo funciona?</string>
+    <string name="title_activity_result">Resultado</string>
+    <string name="title_activity_info">Mas Información</string>
+
+    <!-- Card -->
+    <string name="owner_data">Datos del responsable</string>
+    <string name="no_data">No se encontraron resultados</string>
 
 </resources>

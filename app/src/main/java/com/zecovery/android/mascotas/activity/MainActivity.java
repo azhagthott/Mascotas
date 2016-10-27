@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.google.firebase.crash.FirebaseCrash;
 import com.zecovery.android.mascotas.R;
 import com.zecovery.android.mascotas.intro.Intro;
 
@@ -17,38 +18,41 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        FirebaseCrash.log("MainActivity created");
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setupButtons();
     }
 
     private void setupButtons() {
-        ImageView imageViewRut = (ImageView) findViewById(R.id.imageViewRut);
-        ImageView imageViewAddress = (ImageView) findViewById(R.id.imageViewAddress);
-        ImageView imageViewChip = (ImageView) findViewById(R.id.imageViewChip);
-        ImageView imageViewQR = (ImageView) findViewById(R.id.imageViewQR);
+        ImageView ivRut = (ImageView) findViewById(R.id.ivRut);
+        ImageView ivChip = (ImageView) findViewById(R.id.ivChip);
+        ImageView ivQR = (ImageView) findViewById(R.id.ivQR);
+        ImageView ivInfo = (ImageView) findViewById(R.id.ivInfo);
 
-        imageViewRut.setOnClickListener(this);
-        imageViewAddress.setOnClickListener(this);
-        imageViewChip.setOnClickListener(this);
-        imageViewQR.setOnClickListener(this);
+        ivRut.setOnClickListener(this);
+        ivChip.setOnClickListener(this);
+        ivQR.setOnClickListener(this);
+        ivInfo.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
 
         switch (view.getId()) {
-            case R.id.imageViewRut:
+            case R.id.ivRut:
                 startActivity(new Intent(MainActivity.this, RutActivity.class));
                 break;
-            case R.id.imageViewAddress:
-                startActivity(new Intent(MainActivity.this, AddressActivity.class));
+            case R.id.ivChip:
+                startActivity(new Intent(MainActivity.this, ChipActivity.class));
                 break;
-            case R.id.imageViewQR:
+            case R.id.ivQR:
                 startActivity(new Intent(MainActivity.this, QRActivity.class));
                 break;
-            case R.id.imageViewChip:
-                startActivity(new Intent(MainActivity.this, ChipActivity.class));
+            case R.id.ivInfo:
+                startActivity(new Intent(MainActivity.this, InfoActivity.class));
                 break;
         }
     }

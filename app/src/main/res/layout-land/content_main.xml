@@ -15,27 +15,27 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@color/green_400">
+        android:background="@color/green_500">
 
         <TextView
+            android:id="@+id/tvRut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="18dp"
             android:layout_marginStart="18dp"
             android:layout_marginTop="36dp"
-            android:text="@string/title_activity_rut"
+            android:text="@string/button_rut"
             android:textSize="24sp" />
 
         <ImageView
-            android:id="@+id/imageViewRut"
+            android:id="@+id/ivRut"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="24dp"
-            android:contentDescription="@string/image_rut_content_description"
-            android:src="@mipmap/ic_launcher"
-            android:text="@string/button_rut" />
+            android:contentDescription="@string/button_rut"
+            android:src="@mipmap/ic_launcher" />
 
     </RelativeLayout>
 
@@ -43,28 +43,27 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@color/red_400">
+        android:background="@color/red_500">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tvChip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="18dp"
             android:layout_marginStart="18dp"
             android:layout_marginTop="36dp"
-            android:text="@string/title_activity_address"
+            android:text="@string/button_chip"
             android:textSize="24sp" />
 
         <ImageView
-            android:id="@+id/imageViewAddress"
+            android:id="@+id/ivChip"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="24dp"
-            android:contentDescription="@string/image_address_content_description"
-            android:src="@mipmap/ic_launcher"
-            android:text="@string/button_address" />
+            android:contentDescription="@string/button_chip"
+            android:src="@mipmap/ic_launcher" />
 
     </RelativeLayout>
 
@@ -72,28 +71,27 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@color/blue_400">
+        android:background="@color/blue_500">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/tvQR"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="18dp"
             android:layout_marginStart="18dp"
             android:layout_marginTop="36dp"
-            android:text="@string/title_activity_chip"
+            android:text="@string/button_qr"
             android:textSize="24sp" />
 
         <ImageView
-            android:id="@+id/imageViewChip"
+            android:id="@+id/ivQR"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="24dp"
-            android:contentDescription="@string/image_chip_content_description"
-            android:src="@mipmap/ic_launcher"
-            android:text="@string/button_chip" />
+            android:contentDescription="@string/button_qr"
+            android:src="@mipmap/ic_launcher" />
 
     </RelativeLayout>
 
@@ -101,28 +99,27 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@color/amber_400">
+        android:background="@color/amber_500">
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/tvInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="18dp"
             android:layout_marginStart="18dp"
             android:layout_marginTop="36dp"
-            android:text="@string/title_activity_qr"
+            android:text="@string/button_info"
             android:textSize="24sp" />
 
         <ImageView
-            android:id="@+id/imageViewQR"
+            android:id="@+id/ivInfo"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="27dp"
-            android:contentDescription="@string/image_qr_content_description"
-            android:src="@mipmap/ic_launcher"
-            android:text="@string/button_qr" />
+            android:contentDescription="@string/button_info"
+            android:src="@mipmap/ic_launcher" />
 
     </RelativeLayout>
 

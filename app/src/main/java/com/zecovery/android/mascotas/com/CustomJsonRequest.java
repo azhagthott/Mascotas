@@ -1,10 +1,18 @@
 package com.zecovery.android.mascotas.com;
 
+import android.util.Log;
+
+import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.toolbox.JsonObjectRequest;
 
 import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import static com.zecovery.android.mascotas.activity.BaseActivity.LOG_TAG;
 
 /**
  * Created by francisco on 24-08-16.
