@@ -13,6 +13,9 @@
     tools:context="com.zecovery.android.mascotas.activity.AboutActivity"
     tools:showIn="@layout/activity_about">
 
-
+<TextView
+    android:text="Explicar aquí las funciones de la app, en lo psoible usar imagenes descrptivas "
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
 
 </RelativeLayout>

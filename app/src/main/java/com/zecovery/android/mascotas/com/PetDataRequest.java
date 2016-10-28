@@ -9,6 +9,7 @@ import com.zecovery.android.mascotas.app.Mascota;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,6 +35,7 @@ public class PetDataRequest extends BaseActivity {
             if (status.equals(RESPONSE_STATUS_OK)) {
                 JSONArray response = jsonObject.getJSONArray("response");
 
+
                 for (int i = 0; i <response.length() ; i++) {
 
                     Log.d(LOG_TAG, "response.length: "  + response.length());
@@ -42,7 +44,9 @@ public class PetDataRequest extends BaseActivity {
 
                     JSONObject object = response.getJSONObject(i);
 
-                    mascota.setNumeroFolio(object.getInt("N_FOLIO"));
+                    int numeroFolio = object.getInt("N_FOLIO");
+
+                    mascota.setNumeroFolio(numeroFolio);
                     mascota.setNumeroChip(object.getString("CHIP"));
                     mascota.setNombre(object.getString("NOMBRE"));
                     mascota.setEspecie(object.getString("ESPECIE"));
@@ -72,6 +76,23 @@ public class PetDataRequest extends BaseActivity {
             FirebaseCrash.report(e);
         }
         return list;
+    }
+
+    private String validaResultado(JSONObject jsonObject, String key){
+
+        String resultado="";
+
+        try{
+            if(jsonObject.isNull(key)){
+                resultado = null;
+            }else {
+                resultado = jsonObject.getString(key);
+            }
+
+        }catch(Exception e){
+            Log.d(LOG_TAG, "Exception: " + e);
+        }
+        return resultado;
     }
 }
 

@@ -56,7 +56,6 @@ public class RutActivity extends BaseActivity implements View.OnClickListener {
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(false);
         layoutManager = new LinearLayoutManager(this);
-        layoutManager.canScrollVertically(false);
         recyclerView.setLayoutManager(layoutManager);
 
     }
@@ -111,7 +110,7 @@ public class RutActivity extends BaseActivity implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.fab) {
-            getResult();
+getResult();
         }
     }
 }

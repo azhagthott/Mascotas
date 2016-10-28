@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cardViewResult"
     android:layout_width="match_parent"
-    android:layout_height="260dp"
+    android:layout_height="300dp"
     app:cardCornerRadius="1dp"
     app:cardElevation="2dp"
     app:cardUseCompatPadding="true">
@@ -16,6 +16,13 @@
         android:layout_marginStart="12dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="18sp"
+            android:text="Datos de la mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
 
         <TextView
             android:layout_margin="4dp"
@@ -44,6 +51,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
+        <View
+            android:background="@color/grey_200"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:layout_margin="4dp"
+            android:textSize="18sp"
+            android:text="Datos del responsable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
         <TextView
             android:text="Francisco Barrios"
             android:layout_margin="4dp"
@@ -51,32 +70,63 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <TextView
-            android:text="Tercera Avenida 1260"
-            android:layout_margin="4dp"
-            android:id="@+id/tvDireccion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:text="Tercera Avenida 1260"
-            android:layout_margin="4dp"
-            android:id="@+id/tvComuna"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:text="+5625223830"
-            android:layout_margin="4dp"
-            android:id="@+id/tvTelefonoFijo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <TextView
+                android:text="Tercera Avenida 1260"
+                android:layout_margin="4dp"
+                android:id="@+id/tvDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="San MIguel"
+                android:layout_margin="4dp"
+                android:id="@+id/tvComuna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
-        <TextView
-            android:text="+5625223830"
-            android:layout_margin="4dp"
-            android:id="@+id/tvTelefonoMovil"
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="4dp"
+                android:text="telefono fijo:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="+5625223830"
+                android:layout_margin="4dp"
+                android:id="@+id/tvTelefonoFijo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="4dp"
+                android:text="telefono movil:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:text="+5625223830"
+                android:layout_margin="4dp"
+                android:id="@+id/tvTelefonoMovil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
 
         <TextView
             android:text="francisco.barrios@zecovery.com"

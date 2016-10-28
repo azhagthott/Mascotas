@@ -38,4 +38,9 @@ public class BaseActivity extends AppCompatActivity {
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         FirebaseCrash.log("BaseActivity created");
     }
+
+    public void showProgressDialog(){
+
+
+    }
 }
